@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2? family= IBM+Plex+Sans:wght@700 & family= Lato & family= Righteous & family= Work+Sans:wght@100; 300;400;600;800 & mostrar=intercambiar');
 * {
-  box-sizing: border-box;
   font-family: 'Work Sans';
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  line-height: 1.2;
+  display: flexbox;
+}
+body{
+  margin: auto;
 }
 html{
   /* me permite deslizar cuando hago clic en los links del menu */
@@ -12,26 +18,18 @@ html{
 /*MENU*/
 .contenedor-header{
   background: #1e2326;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
-.contenedor-header header{
-  max-width: 1100px;
-  margin: auto;
   display: flex;
+  height: 100px;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 80x 20px;
 }
-.contenedor-header header div a .logo {
+.logo {
   display: flex;
   align-items: center;
   }
   .logo img{
-    height: 180px;
+    height: 80px;
     margin-right: 5px;
   }
 .contenedor-header  header ul{
@@ -41,10 +39,15 @@ html{
 .contenedor-header header nav ul li a{
   text-align: none;
   color: #fff;
-  margin: 0 15px;
-  padding: 3px;
+  margin: 0 12px;
+  padding: 0px;
   transition: .5s;
   text-decoration: none;
+}
+ul{
+padding-left: 400px;
+align-items: center;
+display: flex;
 }
 .contenedor-header header nav ul li a:hover{
   color: #1CB698;
