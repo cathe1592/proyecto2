@@ -4,82 +4,66 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
-  line-height: 1.2;
-  display: flexbox;
-}
-body{
-  margin: auto;
 }
 html{
   /* me permite deslizar cuando hago clic en los links del menu */
   scroll-behavior: smooth;
 }
-/*MENU*/
 .contenedor-header{
-  background: #1e2326;
+  
+  max-width: 1100px;
+  margin: auto;
   display: flex;
-  height: 100px;
   justify-content: space-between;
-  align-items: center;
-  padding: 80x 20px;
+  background: #1e2326;
+  padding: 10px 20px;
 }
-.logo {
-  display: flex;
+#section1 .contenedor-header header .logo{
   align-items: center;
-  }
-  .logo img{
-    height: 80px;
-    margin-right: 5px;
-  }
-.contenedor-header  header ul{
   display: flex;
-  list-style: none;
 }
-.contenedor-header header nav ul li a{
-  text-align: none;
+.logo img{
+height: 80px;
+margin-right: 5px;
+}
+#section1 .contenedor-header  header nav ul{
+list-style: none;
+display: flex;
+align-items: center;
+}
+#section1 .contenedor-header header nav ul li a{
+  text-decoration: none;
   color: #fff;
   margin: 0 12px;
-  padding: 0px;
+  font-weight: 400;
   transition: .5s;
-  text-decoration: none;
 }
-ul{
-padding-left: 400px;
-align-items: center;
-display: flex;
-}
-.contenedor-header header nav ul li a:hover{
+#section1 .contenedor-header header nav ul li a:hover{
   color: #1CB698;
 }
-.nav-responsive{
-  background-color: #1CB698;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  display: none;
-}
+
 /* SECCION I N I C I O */
-.inicio{
+#inicio .contenido-banner{
+margin: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 50px;
+background-color: #1e2326;
+border-radius: 40px;
+}
+#inicio{
+ max-width: 1100px;
+ margin: auto;
+  padding: 10px 20px;
   background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
   url(img/fondo.jpg);
-  background-size: cover;
-  height: 150vh;
+  height: 130vh;
   color: #fff;
-  display: flex;
-  align-items: center;
+ display: flex;
 }
-.inicio .contenido-banner{
-  padding: 50px;
-  background-color: #1e2326;
-  max-width: 800px;
-  margin: auto;
-  margin-top: 250px;
-  text-align: center;
-  border-radius: 40px;
-}
-.inicio .contenido-banner img{
+#inicio .contenido-banner img{
   margin-top: 40px;
   border: 10px solid #f7cc7c;
   display: block;
@@ -88,40 +72,68 @@ display: flex;
   margin: auto;
   border-radius: 50%;
 }
-.inicio .contenido-banner h1{
-  margin-top: 40px;
-  font-size: 42px;
-  font-family: 'Righteous';
+#inicio .contenido-banner .contenedor-img .bienvenida{
+font-size: 16;
+margin-bottom: 20px;
+margin-top: 20px;
+text-transform: uppercase;
+font-family: 'Righteous';
+letter-spacing: 5px;
+text-align: center;
 }
-.inicio .contenido-banner h2{
-  font-size: 15px;
-  font-weight: normal;
-}
-.inicio .contenido-banner .redes a{
-  color: #fff;
-  display: inline-block;
-  text-decoration: none;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
-  margin: 40px 5px;
+#inicio .contenido-banner .contenedor-img h2{
   font-size: 20px;
-  transition: .3s;
+  margin-bottom: 25px;
+  text-align: center;
 }
+#inicio .contenido-banner .contenedor-img h2 span{
+  font-size: 25px;
+  color: #1CB698;
+}
+#inicio .contenido-banner .contenedor-img a{
+  text-decoration: none;
+  display: block;
+  margin: 25px;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: .5s;
+  text-align: center;
+}
+#inicio .contenido-banner .contenedor-img a:hover{
+  background-color: #1CB698;
+}
+#inicio .redes a {
+color: #fff;
+display: inline-block;
+text-decoration: none;
+border: 1px solid #fff;
+border-radius: 100%;
+width: 35px;
+height: 35px;
+line-height: 35px;
+margin: 40px 5px;
+font-size: 30px;
+transition: .3s;
+}
+
 .inicio .contenido-banner .redes a:hover{
   background-color: #1CB698;
 }
 /* SECCION SOBRE MI */
-.sobremi{
-  background-color: #1e2326;
-  color: #fff;
-  padding: 50px 20px;
-}
-.sobremi .contenido-seccion{
+#sobremi{
   max-width: 1100px;
   margin: auto;
+  background-color: #1e2326;
+  color: #fff;
+  padding: 100px 15px;
+  display: flex;
+}
+.sobremi .contenido-seccion{
+  margin: 0 40px;
 }
 .sobremi h2{
   font-size: 48px;
@@ -136,7 +148,7 @@ display: flex;
   margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
-  color: #f7cc7c;
+  color: #1CB698;
   font-weight: bold;
 }
 .sobremi .fila{
@@ -159,7 +171,7 @@ display: flex;
 }
 .sobremi .fila .col ul li strong{
   display: inline-block;
-  color: #f7cc7c;
+  color: #1CB698;
   width: 130px;
 }
 .sobremi .fila .col ul li span{
@@ -203,6 +215,11 @@ display: flex;
   position: relative;
   z-index: 10;
 }
+.sobremi button .descargar{
+  color: #fff;
+  font-size: 18px;
+
+}
 .sobremi button .overlay{
   position: absolute;
   top: 0;
@@ -217,10 +234,11 @@ display: flex;
   width: 100%;
 }
 /* SECCION HABILIDADES */
-.habilidades{
-  background-color: #252A2E;
+.habilidades{max-width: 1100px;
+  margin: auto;
+  background-color: #1e2326;
   color: #fff;
-  padding: 50px 20px;
+  padding: 100px 30px;
 }
 .habilidades .contenido-seccion{
   max-width: 1100px;
@@ -245,7 +263,7 @@ display: flex;
   font-family: 'Righteous';
   margin-bottom: 25px;
 }
-.habilidades .habilidad > span{
+.habilidades .habilidad  span{
   font-weight: bold;
   display: block;
   margin-bottom: 10px;
@@ -278,11 +296,11 @@ display: flex;
 }
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .habilidades .habilidad .javascript{
-  width: 0%;
+  width: 50%;
   animation: 2s javascript forwards;
 }
 @keyframes javascript {
-  0%{width: 0%;}
+  0%{width: 0;}
   100%{width: 50%;}
 }
 
@@ -299,16 +317,21 @@ display: flex;
   animation: 2s comunicacion forwards;
 }
 @keyframes comunicacion {
-  0%{width: 0%;}
+  0%{width: 0;}
   100%{width: 80%;}
 }
-
+@keyframes progreso1 {
+  0%{
+    width: 0;
+  }
+  100%{width: 50%;}
+}
 .habilidades .habilidad .trabajo{
-  width: 0%;
+  width: 70%;
   animation: 2s trabajo forwards;
 }
 @keyframes trabajo {
-  0%{width: 0%;}
+  0%{width: 0;}
   100%{width: 70%;}
 }
 
@@ -338,11 +361,15 @@ display: flex;
   0%{width: 0%;}
   100%{width: 94%;}
 }
+
 /* SECCION CURRICULUM */
 .curriculum{
+  max-width: 1100px;
+  margin: auto;
   background-color: #1e2326;
   color: #fff;
   padding: 50px 20px;
+  display: flex;
 }
 .curriculum .contenido-seccion{
   max-width: 1100px;
@@ -446,9 +473,13 @@ display: flex;
 }
 /* SECCION CONTACTO */
 .contacto{
-  background-color: #010102;
+  max-width: 1100px;
+  margin: auto;
   color: #fff;
-  padding: 50px 0;
+  padding: 50px 0px;
+  display: flex;
+  max-width: 1100px;
+  background-color: #010102;
 }
 .contacto .contenido-seccion{
   max-width: 1100px;
@@ -530,28 +561,30 @@ display: flex;
   margin-right: 20px;
 }
 footer{
-  background-color: #252A2E;
+  max-width: 1100px;
   color: #fff;
   padding: 50px 0 30px 0;
   text-align: center;
   position: relative;
-  width: 100%;
+  margin: auto;
+  background-color: #252A2E;
+  
 }
 footer .redes{
   margin-bottom: 20px;
 }
 footer .redes a{
   color: #fff;
-  display: inline-block;
-  text-decoration: none;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
-  margin: 40px 5px;
-  font-size: 20px;
-  transition: .3s;
+display: inline-block;
+text-decoration: none;
+border: 1px solid #fff;
+border-radius: 100%;
+width: 35px;
+height: 35px;
+line-height: 35px;
+margin: 40px 5px;
+font-size: 30px;
+transition: .3s;
 }
 footer .arriba{
   display: block;

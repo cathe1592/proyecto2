@@ -10,15 +10,15 @@
 </head>
 <body>
     <!---MENU ENCABEZADO-->
+    <section id="section1">
     <div class="contenedor-header">
          <header>
             <div >
-                <a
-                  href="" class="logo">  <img src="logo.png" alt="">
+                <a class="logo">
+                    <img src="logo.png" alt="logo">
                 </a>
-             </div>
              <nav id="nav">
-                <ul>
+                <ul id="links">
                     <li><a href="#inicio"> INICIO</a></li>
                     <li><a href="#sobremi">SOBRE MI</a></li>
                     <li><a href="#habilidades">HABILIDADES</a></li>
@@ -26,20 +26,29 @@
                     <li><a href="#contacto">CONTACTO</a></li>
                 </ul>
             </nav>
+            <!--Iconos del menu responsive-->
+            <div id="icono-nav">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            </div>
          </header>
     </div>
-
+    </section>
     <!--SECCION INICIO-->
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
                 <img src="Mi foto.jpg" alt="">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>¡Hola! Soy <span>Marjorie Alban</span>, Desarrolladora web</h2>
+                <a href="#portfolio">Ir a Portafolio</a>
             </div>
-            <h1>¡Hola! Soy Marjorie Alban</h1>
-            <h2>Diseñadora de paguinas web</h2>
+
+            
+            <!---Iconos de las redes sociales-->
             <div class="redes">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
                 <a href="#"><i class="fa-brands fa-skype"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="#"><i class="fa-solid fa-rss"></i></a>
@@ -102,7 +111,7 @@
                     </div>
                 </div>
             <button>
-                <a href="https://docs.google.com/document/d/1IlQ0Sd8FR6cIkxU85QbAZKgZ9I9-k_pS/edit?usp=drivesdk&ouid=112627655493575166015&rtpof=true&sd=true"
+                <a class="descargar" href="https://docs.google.com/document/d/1IlQ0Sd8FR6cIkxU85QbAZKgZ9I9-k_pS/edit?usp=drivesdk&ouid=112627655493575166015&rtpof=true&sd=true"
                  download=""> Descargar  CV </a><i class="fa-solid fa-download"></i>
                     <span class="overlay"></span>
             </button>
@@ -110,78 +119,78 @@
     </section>
 
     <!-- SECCION habilidades -->
-    <section class="habilidades" id="habilidades">
-        <div class="contenido-seccion">
-            <h2>Habilidades</h2>
-            <div class="fila">
                 <!-- Habilidades técnicas -->
-                <div class="col">
-                    <h3>Habilidades técnicas</h3>
-                    <div class="habilidad">
-                        <span>Javascript</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso">
-                                <span>50%</span>
+                <section class="habilidades" id="habilidades">
+                    <div class="contenido-seccion">
+                        <h2>Habilidades</h2>
+                        <div class="fila">
+                            <!-- Habilidades técnicas -->
+                            <div class="col">
+                                <h3>Habilidades técnicas</h3>
+                                <div class="habilidad">
+                                    <span>Javascript</span>
+                                    <div class="barra-habilidad">
+                                        <div class="progreso">
+                                            <span>50%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="habilidad">
+                                    <span>HTML & CSS</span>
+                                    <div class="barra-habilidad">
+                                        <div class="progreso">
+                                            <span>50%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Habilidades profesionales -->
+                            <div class="col">
+                                <h3>Habilidades profesionales</h3>
+                                <div class="habilidad">
+                                    <span>Comunicación</span>
+                                    <div class="barra-habilidad">
+                                        <div class="progreso">
+                                            <span>80%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="habilidad">
+                                    <span>Trabajo en Equipo</span>
+                                    <div class="barra-habilidad">
+                                        <div class="progreso">
+                                            <span>70%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="habilidad">
+                                    <span>Creatividad</span>
+                                    <div class="barra-habilidad">
+                                        <div class="progreso">
+                                            <span>99%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="habilidad">
+                                    <span>Dedicación</span>
+                                    <div class="barra-habilidad">
+                                        <div class="progreso">
+                                            <span>65%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="habilidad">
+                                    <span>Gestión de proyectos</span>
+                                    <div class="barra-habilidad">
+                                        <div class="progreso">
+                                            <span>94%</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="habilidad">
-                        <span>HTML & CSS</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso">
-                                <span>50%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Habilidades profesionales -->
-                <div class="col">
-                    <h3>Habilidades profesionales</h3>
-                    <div class="habilidad">
-                        <span>Comunicación</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="habilidad">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="habilidad">
-                        <span>Creatividad</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso">
-                                <span>99%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="habilidad">
-                        <span>Dedicación</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso">
-                                <span>65%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="habilidad">
-                        <span>Gestión de proyectos</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso">
-                                <span>94%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+                </section>
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
